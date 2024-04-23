@@ -59,10 +59,12 @@
     img.onpointerdown = () => console.log (`hi curtis`)
 
     const slide_sound = document.createElement ('audio')
-    slide_sound.src = 'public/sound/declined.mp3'
+    slide_sound.src = '/sound/declined.mp3'
+    console.dir (slide_sound)
 
-    const circle = document.getElementById ('wk6test')
+    const circle = document.getElementById ('w6test')
     circle.onpointerdown = () => {
+        console.log (`hihi`)
         slide_sound.play ()
     }
 
